@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 🌤 Skye Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time weather application built with React that shows live weather data for any city in the world.
 
-## Available Scripts
+🔗 Live Demo: https://weather-app-xi-weld-77.vercel.app/
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## What I Built
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A fully functional weather app using React and the OpenWeatherMap API. The app detects your location automatically, lets you search any city, and shows current weather along with a 5-day forecast. All search history is saved locally so it persists even after refreshing the page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Search weather for any city in the world
+- Auto-detects your current location using the browser Geolocation API
+- Toggle between Celsius and Fahrenheit — refetches data instantly
+- 5-day forecast showing temperature and weather icon per day
+- Last 5 searches saved using localStorage
+- Delete individual searches or clear all history at once
+- Skeleton loading animation while data is being fetched
+- Error messages for invalid city names or network failures
+- Responsive design — works on mobile, tablet, and desktop
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## What I Learned
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- How to use fetch and async/await to call a real REST API
+- How to handle loading, success, and error states in React
+- How to use Promise.all to run two API calls at the same time
+- How useState manages multiple pieces of state in one component
+- How useEffect runs code on mount and when dependencies change
+- How useCallback prevents unnecessary function re-creation
+- How localStorage saves and retrieves data across page refreshes
+- How to use the browser Geolocation API
+- How environment variables keep API keys secure
+- How to deploy a React app on Vercel and set environment variables in production
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React
+- CSS
+- OpenWeatherMap API
+- localStorage
+- Vercel
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## API Endpoints Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- /data/2.5/weather — current weather by city name
+- /data/2.5/forecast — 5-day forecast in 3-hour intervals
+- /data/2.5/weather?lat=&lon= — weather by coordinates from geolocation
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Deployed on Vercel: https://weather-app-xi-weld-77.vercel.app/
 
-### Code Splitting
+API key is stored securely in Vercel's Environment Variables dashboard — never in the code or pushed to GitHub.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deepakragavan J
+LinkedIn: https://www.linkedin.com/in/deepakragavan-j/
+Portfolio: https://weather-app-xi-weld-77.vercel.app/
